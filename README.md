@@ -1,4 +1,4 @@
-### This lab is aimed to learn developing, compiling, deploying and interacting with contract without IDE. You can use the ethereum network provider (local or testnet) and API library (web3 or ether js) of your choice
+##### This lab is aimed to learn developing, compiling, deploying and interacting with contract without IDE. You can use the ethereum network provider (local or testnet) and API library (web3 or ether js) of your choice
 
 ## Instructions:
 
