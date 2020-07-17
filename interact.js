@@ -7,10 +7,11 @@ const web3 = new Web3(new Web3.providers.HttpProvider(process.env.URI));
 
 //adding account to wallet
 web3.eth.accounts.wallet.add(`0x${process.env.PRIVATE_KEY}`);
+
 //get contract instance
 const Lab4Contract = new web3.eth.Contract(abi, process.env.CONTRACT_ADDRESS);
 
-//read the number
+//read the string
 Lab4Contract.methods
   .readString()
   .call()
@@ -18,8 +19,7 @@ Lab4Contract.methods
     console.log(`Initial value of string: ${result}`);
   });
 
-// console.log(web3.eth.accounts.wallet[0].address);
-// call the add method of SC
+// call the write method
 Lab4Contract.methods
   .write("testString")
   .estimateGas()
